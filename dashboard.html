@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/dash_style.css">
+    <script defer src="assets/js/dashboard.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Gestión de Productos</h1>
+        <a href="logout.html">Cerrar Sesión</a>
+    </header>
+    <main>
+        <button onclick="window.location.href='create_product.html'">Crear Producto</button>
+        <table id="products-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Unidad de Medida</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los productos se cargarán aquí mediante JavaScript -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

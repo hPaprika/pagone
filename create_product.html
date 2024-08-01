@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto</title>
+    <link rel="stylesheet" href="assets/css/create_product.css">
+    <script defer src="assets/js/create_product.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Crear Nuevo Producto</h1>
+        <a href="dashboard.html">Volver al Dashboard</a>
+    </header>
+    <main>
+        <form id="create-product-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description"></textarea>
+            
+            <label for="price">Precio:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+            
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" name="quantity" required>
+            
+            <label for="unit_of_measure">Unidad de Medida:</label>
+            <input type="text" id="unit_of_measure" name="unit_of_measure" required>
+            
+            <button type="submit">Crear Producto</button>
+        </form>
+    </main>
+</body>
+</html>
