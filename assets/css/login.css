@@ -9,18 +9,25 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
 header {
     text-align: center;
     margin-bottom: 20px;
 }
+
 header h1 {
     font-size: 2em;
     margin: 0;
 }
+
 header a {
     color: #3498db;
     text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    margin-top: 10px;
 }
+
 main {
     width: 100%;
     max-width: 400px;
@@ -28,21 +35,28 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
+
 form {
     display: flex;
     flex-direction: column;
 }
+
 label {
     margin-top: 10px;
     font-weight: bold;
 }
+
 input[type="email"], input[type="password"] {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
 }
+
 button {
     background-color: #3498db;
     color: white;
@@ -51,12 +65,57 @@ button {
     border-radius: 4px;
     margin-top: 20px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
+
 button:hover {
     background-color: #2980b9;
 }
+
 #error-message {
     color: red;
     margin-top: 15px;
     text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header a {
+        font-size: 0.9em;
+        margin-top: 5px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header a {
+        font-size: 0.8em;
+        margin-top: 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    button {
+        padding: 6px;
+        font-size: 0.8em;
+    }
 }
